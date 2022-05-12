@@ -345,3 +345,20 @@ Thu May 12 19:55:38 UTC 2022:
  tests:  6|2
 total_score: 45/70
 da6e523
+Thu May 12 23:25:29 UTC 2022: 
+ sudoku.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_final’:
+sudoku.c:137:19: error: expected ‘)’ before ‘{’ token
+   if(is_valid((n)){
+                   ^
+sudoku.c:141:1: error: expected expression before ‘}’ token
+ }
+ ^
+sudoku.c:141:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+5d6dfe9
