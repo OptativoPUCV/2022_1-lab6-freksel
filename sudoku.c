@@ -44,11 +44,8 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-    int i,j=0,p,k;
+    int i,j,p,k;
     int A[10];
-    for(p=0;p<10;p++){
-      A[p]=0;
-    }
     for(i=0;i<9;i++){
       for(p=0;p<10;p++){
         A[p]=0;
