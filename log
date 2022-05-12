@@ -1,0 +1,15 @@
+Thu May 12 15:23:35 UTC 2022: 
+ sudoku.c | 20 ++++++++++++++++++--
+ 1 file changed, 18 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:58:15: error: ‘k’ undeclared (first use in this function)
+           for(k=1;k<10;k++){
+               ^
+sudoku.c:58:15: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:54:13: error: unused variable ‘m’ [-Werror=unused-variable]
+     int i,j,m;
+             ^
+cc1: all warnings being treated as errors
+Compilation failed
+0f2fa53
