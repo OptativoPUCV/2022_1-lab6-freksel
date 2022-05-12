@@ -52,7 +52,7 @@ int is_valid(Node* n){
           A[n->sudo[i][j]]=n->sudo[i][j];
           }
         else{
-          return 0;n
+          return 0;
         }
       }
     return 1;
