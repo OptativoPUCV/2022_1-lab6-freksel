@@ -44,15 +44,15 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-    int i,j=0;
+    int i,j=0,p;
     int A[10];
     for(i=0;i<9;i++){
-      if(A[n->sudo[i][j]]==0){
-        A[n->sudo[i][j]]=n->sudo[i][j];
-        printf("%d ",n->sudo[i][j]);
-        }
-      else{
+      p=n->sudo[i][j];
+      if(A[p]!=0){
         return 0;
+      }
+      else{
+        A[p]=1;
       }
     }
   return 1;
