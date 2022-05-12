@@ -50,7 +50,6 @@ int is_valid(Node* n){
       for(i=0;i<9;i++){
         if(A[n->sudo[i][j]]==0){
           A[n->sudo[i][j]]=n->sudo[i][j];
-          printf("%d ",n->sudo[i][j]);
           }
         else{
           return 0;
