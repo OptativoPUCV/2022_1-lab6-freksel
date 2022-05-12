@@ -44,17 +44,17 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-    int i,j;
-    int A[10],B[10],C[10];
-    for(j=0;j<9;j++){
-      for(i=0;i<9;i++){
-        if(A[n->sudo[i][j]]==0){
-          A[n->sudo[i][j]]=n->sudo[i][j];
-          }
-        else{
-          return 0;
-        }
-      }
+    //int i,j;
+    //int A[10],B[10],C[10];
+    //for(j=0;j<9;j++){
+    //  for(i=0;i<9;i++){
+    //    if(A[n->sudo[i][j]]==0){
+    //      A[n->sudo[i][j]]=n->sudo[i][j];
+    //      }
+    //    else{
+    //      return 0;
+    //    }
+    //  }
     return 1;
 }
 
