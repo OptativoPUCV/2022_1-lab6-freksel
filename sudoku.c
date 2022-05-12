@@ -134,7 +134,7 @@ int is_final(Node* n){
       }
     }
   }
-  if(is_valid((n))){
+  if(is_valid(n)==1){
     return 1;
   }
   return 0;
