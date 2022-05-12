@@ -88,8 +88,8 @@ int is_valid(Node* n){
     for(m=0;m<9;m++){
       int i=3*(k/3) + (m/3) ;
       int j=3*(k%3) + (m%3) ;
-      if(n->sudo[j][i]!=0){
-        k=n->sudo[j][i];
+      if(n->sudo[i][j]!=0){
+        k=n->sudo[i][j];
         if(A[k]!=0){
           return 0;
         }
