@@ -19,3 +19,23 @@ Thu May 12 15:23:44 UTC 2022:
  tests:  2|4
 total_score: 15/70
 f14e7d8
+Thu May 12 15:38:15 UTC 2022: 
+ sudoku.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:50:45: error: expected expression before ‘)’ token
+       if(n->sudo[i][j]==0 || n->sudo[i][j]!=){
+                                             ^
+sudoku.c:48:21: error: unused variable ‘C’ [-Werror=unused-variable]
+     int A[10],B[10],C[10];
+                     ^
+sudoku.c:48:15: error: unused variable ‘B’ [-Werror=unused-variable]
+     int A[10],B[10],C[10];
+               ^
+sudoku.c:48:9: error: variable ‘A’ set but not used [-Werror=unused-but-set-variable]
+     int A[10],B[10],C[10];
+         ^
+cc1: all warnings being treated as errors
+Compilation failed
+b0f777e

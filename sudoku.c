@@ -44,7 +44,22 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  
+    int i,j,k,p;
+    int A[10],B[10],C[10];
+    for(i=0;i<9;i++){
+      if(n->sudo[i][j]==0 || n->sudo[i][j]!=){
+        A[i]=1;
+      }
+      else{
+        return 0;
+      }
+    }
+  for(p=0;p<9;p++){
+    int i=3*(k/3) + (p/3);
+    int j=3*(k%3) + (p%3);
+    printf("%d ",n->sudo[i][j]);
+    if(p%3 == 2) printf("\n");
+  }
     return 1;
 }
 
