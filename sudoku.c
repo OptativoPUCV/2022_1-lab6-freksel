@@ -44,7 +44,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-    int i,j,p,k;
+    int i,j,p,k,m,l;
     int A[10];
   //Filas 
     for(i=0;i<9;i++){
@@ -64,13 +64,13 @@ int is_valid(Node* n){
       }
     }
   //Columnas
-  for(j=0;j<9;i++){
+  for(i=0;i<9;i++){
     for(p=0;p<10;p++){
       A[p]=0;
     }
-    for(i=0;i<9;j++){
-      if(n->sudo[i][j]!=0){
-        k=n->sudo[i][j];
+    for(j=0;j<9;j++){
+      if(n->sudo[j][i]!=0){
+        k=n->sudo[j][i];
         if(A[k]!=0){
           return 0;
         }
@@ -81,7 +81,24 @@ int is_valid(Node* n){
     }
   }
   //Matrices
-  
+  for(l=0;l<9;l++){
+    for(p=0;p<10;p++){
+      A[p]=0;
+    }
+    for(m=0;m<9;m++){
+      int i=3*(k/3) + (m/3) ;
+      int j=3*(k%3) + (m%3) ;
+      if(n->sudo[j][i]!=0){
+        k=n->sudo[j][i];
+        if(A[k]!=0){
+          return 0;
+        }
+        else{
+          A[k]=1;
+        }
+      }
+    }
+  }
   return 1;
 }
 
