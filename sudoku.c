@@ -46,6 +46,7 @@ void print_node(Node* n){
 int is_valid(Node* n){
     int i,j,p,k;
     int A[10];
+  //Filas 
     for(i=0;i<9;i++){
       for(p=0;p<10;p++){
         A[p]=0;
@@ -62,6 +63,23 @@ int is_valid(Node* n){
         }
       }
     }
+  //Columnas
+  for(j=0;j<9;i++){
+    for(p=0;p<10;p++){
+      A[p]=0;
+    }
+    for(i=0;i<9;j++){
+      if(n->sudo[i][j]!=0){
+        k=n->sudo[i][j];
+        if(A[k]!=0){
+          return 0;
+        }
+        else{
+          A[k]=1;
+        }
+      }
+    }
+  }
   return 1;
 }
 
