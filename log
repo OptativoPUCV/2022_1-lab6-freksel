@@ -39,3 +39,20 @@ sudoku.c:48:9: error: variable ‘A’ set but not used [-Werror=unused-but-set-
 cc1: all warnings being treated as errors
 Compilation failed
 b0f777e
+Thu May 12 15:43:13 UTC 2022: 
+ sudoku.c | 12 +++---------
+ 1 file changed, 3 insertions(+), 9 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:47:15: error: unused variable ‘p’ [-Werror=unused-variable]
+     int i,j,k,p;
+               ^
+sudoku.c:47:13: error: unused variable ‘k’ [-Werror=unused-variable]
+     int i,j,k,p;
+             ^
+sudoku.c:50:22: error: ‘j’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+       if(A[n->sudo[i][j]]==0){
+            ~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+bd5dd2d
