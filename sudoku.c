@@ -133,9 +133,6 @@ int is_final(Node* n){
         return 0;
       }
     }
-  }
-  if(is_valid(n)==1){
-    return 0;
   }  
   return 1;
 }
