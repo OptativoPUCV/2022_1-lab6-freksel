@@ -157,7 +157,7 @@ Node* DFS(Node* initial, int* cont){
       Laux=next(Alist);
     }
     free(wa);
-    cont=cont+1;
+    (*cont)++;
   }
   return NULL;
 }
