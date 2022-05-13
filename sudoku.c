@@ -140,8 +140,8 @@ int is_final(Node* n){
 Node* DFS(Node* initial, int* cont){
   Stack* S=createStack();
   push(S,initial);
-  int P=get_size(S);
-  while(P!=0){
+  //int P=get_size(S);
+  while(get_size(S)!=0){
     Node* wa=top(S);
     pop(S);
     if(is_final(wa)){
